@@ -1,0 +1,23 @@
+
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <h2>(Todo List)</h2>
+
+  <input type="text" id="taskInput" placeholder="افزودن تسک جدید...">
+  <button onclick="addTask()">افزودن</button>
+  <button onclick="clearTasks()">حذف همه</button>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" oninput="searchTasks()" placeholder="جستجوی تسک‌ها...">
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="./script.js"></script>
+</body>
+</html>
