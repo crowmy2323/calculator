@@ -13,3 +13,7 @@ function calculateResult() {
         document.getElementById('اشتباه').innerHTML = result
     }
     }
+function clearResult () {
+    result = ''
+    document.getElementById('result').innerText = result
+}
