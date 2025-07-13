@@ -1,23 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>Todo List</title>
-  <link rel="stylesheet" href="./style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>ماشین حساب</title>
 </head>
+
 <body>
-  <h2>(Todo List)</h2>
+    <div class="container text-center">
+        <h1 class="mb-4">ماشین حساب</h1>
+        <div class="row">
+            <div class="rounded-4 mb-4"><h1 id="result"></h1></div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(7)">7</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(8)">8</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(9)">9</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(4)">4</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(5)">5</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(6)">6</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(1)">1</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(2)">2</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber(3)">3</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber('*')">*</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber('/')">/</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber('+')">+</button>
+            </div>
+            <div class="col-3 mb-4 btn "><button class="  text-center  " onclick="appendNumber('-')">-</button>
+            </div>
+            <div class="col-3 mb-4 btn"><button onclick="calculateResult()">=</button></div>
+        </div>
 
-  <input type="text" id="taskInput" placeholder="افزودن تسک جدید...">
-  <button onclick="addTask()">افزودن</button>
-  <button onclick="clearTasks()">حذف همه</button>
 
-  <div class="search-box">
-    <input type="text" id="searchInput" oninput="searchTasks()" placeholder="جستجوی تسک‌ها...">
-  </div>
-
-  <ul id="taskList"></ul>
-
-  <script src="./script.js"></script>
+    </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
-</html>
